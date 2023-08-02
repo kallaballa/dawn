@@ -3,7 +3,7 @@
 
 solutions = [
   { "name"        : ".",
-    "url"         : "https://dawn.googlesource.com/dawn",
+    "url"         : "https://github.com/kallaballa/dawn.git",
     "deps_file"   : "DEPS",
     "managed"     : False,
   },
