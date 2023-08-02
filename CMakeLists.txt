@@ -537,6 +537,7 @@ if(${TINT_BUILD_DOCS})
 endif()
 
 function(tint_core_compile_options TARGET)
+  target_include_directories(${TARGET} PUBLIC "${DAWN_THIRD_PARTY_DIR}/abseil-cpp/")
   target_include_directories(${TARGET} PUBLIC "${TINT_ROOT_SOURCE_DIR}")
   target_include_directories(${TARGET} PUBLIC "${TINT_ROOT_SOURCE_DIR}/include")
 

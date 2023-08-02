@@ -21,6 +21,7 @@ DawnJSONGenerator(
 add_library(dawn_native ${DAWN_PLACEHOLDER_FILE})
 common_compile_options(dawn_native)
 
+target_link_directories(dawn_native PRIVATE "${Dawn_BINARY_DIR}/../../../../lib/")
 target_compile_definitions(dawn_native PRIVATE "DAWN_NATIVE_IMPLEMENTATION")
 if(BUILD_SHARED_LIBS)
     target_compile_definitions(dawn_native PRIVATE "DAWN_NATIVE_SHARED_LIBRARY")
